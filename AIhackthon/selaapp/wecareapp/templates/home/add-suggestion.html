@@ -1,0 +1,54 @@
+{% extends "layouts/base-user.html" %}
+
+{% block title %} Profile {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="container-fluid px-2 px-md-4">
+      <h5>Add Suggestion</h5>
+      <div class="col-lg-6">
+        <form
+          id="contactForm"
+          data-sb-form-api-token="API_TOKEN"
+          method="POST"
+        >
+          {{ form.hidden_tag() }}
+          <div class="form-floating mb-3" style="background-color: white; ">
+            {{ form.username(class="form-control", placeholder="Enter your
+            name...") }} {{ form.username.label() }}
+          </div>
+          <div class="form-floating mb-3" style="background-color: white; ">
+            {{ form.phone(class="form-control", placeholder="Phone") }} {{ form.phone.label() }}
+          </div>
+         
+
+          <div class="form-floating mb-3" style="background-color: white; height: 100px;">
+            {{ form.description(class="form-control",
+            placeholder="Description") }} {{ form.description.label() }}
+          </div>
+
+          
+          <div class="d-grid">
+            <!-- <button
+              class="btn btn-primary btn-xl"
+              id="submitButton"
+              type="submit"
+            > -->
+            {{ form.submit(class="btn btn-primary btn-xl") }}
+            <!-- Register -->
+            <!-- </button> -->
+          </div>
+        </form>
+        </div>
+         </div>
+
+    
+  </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

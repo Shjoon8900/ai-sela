@@ -1,0 +1,45 @@
+{% extends "layouts/base.html" %} {% block title %} Tables {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %} {% block content %}
+
+<div class="container-fluid py-4">
+  <table class="table table-hover table-dark">
+    <thead>
+      <tr>
+        <!-- Your Columns HERE -->
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Your rows inside the table HERE: -->
+      {% for item in users %}
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.username }}</td>
+        <td>{{ item.email_address }}</td>
+        <td>{{ item.department }}</td>
+        <td>
+          <!-- <button class="btn btn-outline btn-info">Approve</button> -->
+          <button class="btn btn-outline btn-success">
+            <a
+              href="{{ url_for('delete_user', id=item.id) }}"
+              style="text-decoration: none"
+              >Delete</a
+            >
+          </button>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

@@ -1,0 +1,116 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "medical_info_1",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["The best source of information about medications is prescribed by your doctor or using the instructions inside the medication"] 
+      },
+      {
+        "tag": "medical_info_2",
+        "patterns": ["Where do I find treatment?"],
+        "responses": ["You can find treatment by doctors or pharmacies"] 
+      },
+      {
+        "tag": "medical_info_3",
+        "patterns": ["Is it possible to follow a healthy program to lose weight?"],
+        "responses": ["A nutritionist should be consulted to help lose weight; This is because the body needs nutrients in varying proportions according to age, sex, and physical fitness, in addition to health status. It is not necessary for a person to lose weight when he eats healthy food"] 
+      },
+      {
+        "tag": "medical_info_4",
+        "patterns": ["What kind of clinic can I visit for gynecological care?"],
+        "responses": ["you can visit the obstetrics and gynecology clinic. Obstetricians and Gynecologists provide care for women at various stages of their lives, including breast examinations, cervical examinations, infertility problems, childbirth, pregnancy follow-up and postpartum care."] 
+      },
+      {
+        "tag": "medical_info_5",
+        "patterns": ["Which clinics are suitable for dermatology?"],
+        "responses": ["you can visit a dermatology clinic. Dermatologists specialize in the diagnosis and treatment of diseases and conditions related to skin, hair and nails. They can treat acne, psoriasis, atopic dermatitis, eczema, and other skin diseases."] 
+      },
+      {
+        "tag": "medical_info_6",
+        "patterns": ["What kind of clinic can I visit for psychological care?"],
+        "responses": ["you can visit a psychiatric clinic or a psychiatric counseling clinic. Psychiatrists and psychologists provide support and treatment to people with mental disorders such as depression, anxiety, food disorders, addiction, and many other mental illness."] 
+      },
+      {
+        "tag": "medical_info_7",
+        "patterns": ["I have severe sore throat pain, where can I find the right doctor?"],
+        "responses": ["you can visit your family doctor or GP. It can provide primary care and conduct a comprehensive assessment of your health"] 
+      },
+      {
+        "tag": "medical_info_8",
+        "patterns": ["I am overweight, what is the right way to lose weight?"],
+        "responses": ["A nutritionist should be consulted to help lose weight; This is because the body needs nutrients in varying proportions according to age, sex, and physical fitness, in addition to health status, It is not necessary for a person to lose weight when he eats healthy food"] 
+      },
+      {
+        "tag": "medical_info_9",
+        "patterns": ["I have itchy skin, where can I go?"],
+        "responses": ["you can visit a dermatology clinic. Dermatologists specialize in the diagnosis and treatment of diseases and conditions related to skin, hair and nails. They can treat acne, psoriasis, atopic dermatitis, eczema, and other skin diseases."] 
+      },
+      {
+        "tag": "medical_info_10",
+        "patterns": ["Increasing workers for the safety and cleanliness of the place"],
+        "responses": ["Thank you for submitting your proposal and it will be considered by the competent authorities"] 
+      },
+      {
+        "tag": "medical_info_11",
+        "patterns": ["Increasing the number of doctors to the dental clinic"],
+        "responses": ["Thank you for submitting your proposal and it will be considered by the competent authorities"] 
+      },
+      {
+        "tag": "medical_info_12",
+        "patterns": ["The appointment is very far away"],
+        "responses": ["Services limited to stability in the registry only, Cancer patients after operations ,Alzheimer's patients, Patients, after car accidents and head injury, Mental health patients, Bedridden patients, Patients with bedsores and ,wounds, Respiratory problems, Urinary catheterization patients, Gastric tube feeding patients, Intravenous, antibiotic patients, pressure patients, Diabetics, Heart patients, Physiotherapy patients, Stroke patients, Infectious, patients, Mechanism of access to health services"] 
+      },
+      {
+        "tag": "medical_info_13",
+        "patterns": ["Is there an alert or reminder service for children's vaccinations?"],
+        "responses": ["No, we do not have this service at the present time, but we are working on providing it"] 
+      },
+      {
+        "tag": "medical_info_14",
+        "patterns": ["Increasing the number of beds in the maternity department"],
+        "responses": ["Thank you for submitting your proposal and it will be considered by the competent authorities"] 
+      },
+      {
+        "tag": "medical_info_15",
+        "patterns": ["Opening additional appointments for the dental clinic to avoid crowding"],
+        "responses": ["Thank you for submitting your proposal and it will be considered by the competent authorities"] 
+      },
+      {
+        "tag": "medical_info_16",
+        "patterns": ["I have an emergency, I need to bring the next appointment closer"],
+        "responses": ["Okay, you will be booked as soon as possible"]
+      }
+    ]
+  }
+  

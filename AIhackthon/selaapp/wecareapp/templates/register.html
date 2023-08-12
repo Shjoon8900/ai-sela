@@ -1,0 +1,807 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CopyRighting website</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='css/styles.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="page-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <div>
+          <img
+            src="http://alwajiha.org/wp-content/uploads/2021/05/B7A30E78-109F-4C72-8A5B-0D9D89300C73.jpeg"
+            width="70px"
+          />
+          <a class="navbar-brand" href="">CopyRighting</a>
+        </div>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('showMain') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('register_page') }}"
+                >Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login_page') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('loginadmin_page') }}"
+                >Admin</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %}
+    <div class="alert alert-{{ category }}">
+      <button
+        type="button"
+        class="m1-2 mb-1 close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      {{ message }}
+    </div>
+    {% endfor %} {% endif %} {% endwith %}
+    <header class="masthead">
+      <section
+        class="page-section"
+        id="contact"
+        style="padding: 0px !important"
+      >
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+              <form
+                id="contactForm"
+                data-sb-form-api-token="API_TOKEN"
+                method="POST"
+              >
+                {{ form.hidden_tag() }}
+                <div class="form-floating mb-3">
+                  {{ form.username(class="form-control", placeholder="Enter your
+                  name...") }} {{ form.username.label() }}
+                </div>
+                <div class="form-floating mb-3">
+                  {{ form.email_address(class="form-control", placeholder="Email
+                  Address") }} {{ form.email_address.label() }}
+                </div>
+                <div class="form-floating mb-3">
+                  {{ form.password(class="form-control", placeholder="Password")
+                  }} {{ form.password.label() }}
+                </div>
+
+                <div class="form-floating mb-3">
+                  {{ form.password2(class="form-control", placeholder="Confirm
+                  Password") }} {{ form.password2.label() }}
+                </div>
+
+                <div class="form-floating mb-3">
+                  {{ form.department(class="form-control",
+                  placeholder="department") }} {{ form.department.label() }}
+                </div>
+
+                <div class="form-floating mb-3">
+                  {{ form.phone(class="form-control", placeholder="Phone") }} {{
+                  form.phone.label() }}
+                </div>
+
+                <div class="d-grid">
+                 
+                  {{ form.submit(class="btn btn-primary btn-xl") }}
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="page-section bg-primary" id="about">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="text-white mt-0">We've got what you need!</h2>
+            <hr class="divider divider-light" />
+            <p class="text-white-75 mb-4">
+              Start our Service has everything you need to it Register an
+              account, upload your images, and easy to use it!
+            </p>
+            <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <script src="js/scripts.js"></script>
+    
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>We Care</title>
+    <meta
+      name="description"
+      content="Free Bootstrap Theme by BootstrapMade.com"
+    />
+    <meta
+      name="keywords"
+      content="free website templates, free bootstrap themes, free template, free bootstrap, free website template"
+    />
+
+    <link
+    href="{{ url_for('static', filename='css/styles.css') }}"
+    rel="stylesheet"
+  />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/font-awesome.min.css') }}"
+    />
+   
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+
+    
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--banner-->
+    <section id="banner" class="banner">
+      <div class="bg-color">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="col-md-12">
+              <div class="navbar-header">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#myNavbar"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"
+                  ><img
+                    src="{{ url_for('static', filename='img/logo2.png') }}"
+                    class="img-responsive"
+                    style="width: 140px; margin-top: -16px"
+                /></a>
+              </div>
+              <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="{{ url_for('showMain') }}">Home</a></li>
+                  <li class=""><a href="#service">Services</a></li>
+                  <li class=""><a href="#about">About</a></li>
+                  <li class=""><a href="{{ url_for('register_page') }}">Register</a></li>
+                  <li class=""><a href="{{ url_for('login_page') }}">Login</a></li>
+                  <li class=""><a href="{{ url_for('loginadmin_page') }}">Admin</a></li>
+
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="banner-info">
+              <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+
+              <div class="col-lg-6">
+              <form
+                id="contactForm"
+                data-sb-form-api-token="API_TOKEN"
+                method="POST"
+              >
+                {{ form.hidden_tag() }}
+                <div class="form-floating mb-3">
+                  {{ form.username(class="form-control", placeholder="Enter your
+                  name...") }} {{ form.username.label() }}
+                </div>
+                <div class="form-floating mb-3">
+                  {{ form.email_address(class="form-control", placeholder="Email
+                  Address") }} {{ form.email_address.label() }}
+                </div>
+                <div class="form-floating mb-3">
+                  {{ form.password(class="form-control", placeholder="Password")
+                  }} {{ form.password.label() }}
+                </div>
+
+                <div class="form-floating mb-3">
+                  {{ form.password2(class="form-control", placeholder="Confirm
+                  Password") }} {{ form.password2.label() }}
+                </div>
+
+                <div class="form-floating mb-3">
+                  {{ form.department(class="form-control",
+                  placeholder="Adress") }} {{ form.department.label() }}
+                </div>
+
+                <div class="form-floating mb-3">
+                  {{ form.phone(class="form-control", placeholder="Phone") }} {{
+                  form.phone.label() }}
+                </div>
+
+                <div class="d-grid">
+                  <!-- <button
+                    class="btn btn-primary btn-xl"
+                    id="submitButton"
+                    type="submit"
+                  > -->
+                  {{ form.submit(class="btn btn-primary btn-xl") }}
+                  <!-- Register -->
+                  <!-- </button> -->
+                </div>
+              </form>
+              </div>
+              </div>
+              <!-- <div class="banner-logo text-center">
+                <img
+                  src="{{ url_for('static', filename='img/logo2.png') }}"
+                  class="img-responsive"
+                />
+              </div>
+              <div class="banner-text text-center">
+                <h1 class="white">Healthcare at your desk!!</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod <br />tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+                <a href="#contact" class="btn btn-appoint"
+                  >Make an Appointment.</a
+                >
+              </div>
+              <div class="overlay-detail text-center">
+                <a href="#service"><i class="fa fa-angle-down"></i></a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ banner-->
+    <!--service-->
+    <section id="service" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <h2 class="ser-title">Our Service</h2>
+            <hr class="botm-line" />
+            <p>
+              WE CARE always strives to provide<br> distinguished services to its visitors ,<br>
+              we hope that our services will satisfy you
+            </p>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="service-info">
+              <div class="icon">
+                <i class="fa fa-stethoscope"></i>
+              </div>
+              <div class="icon-info">
+                <h4>24 Hour Support</h4>
+                <p>
+                 
+                </p>
+              </div>
+            </div>
+            <div class="service-info">
+              <div class="icon">
+                <i class="fa fa-ambulance"></i>
+              </div>
+              <div class="icon-info">
+                <h4>Complaints Resolution</h4>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="service-info">
+              <div class="icon">
+                <i class="fa fa-user-md"></i>
+              </div>
+              <div class="icon-info">
+                <h4>Answering Inquiries</h4>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+            <div class="service-info">
+              <div class="icon">
+                <i class="fa fa-medkit"></i>
+              </div>
+              <div class="icon-info">
+                <h4>Receive Suggestions</h4>
+                <p>
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ service-->
+    <!--cta-->
+    <section id="cta-1" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="schedule-tab">
+            <div class="col-md-4 col-sm-4 bor-left">
+              <div class="mt-boxy-color"></div>
+              <div class="medi-info">
+                <h3>Complaints Resolution</h3>
+                <p>
+                  If you have any complaints, we are available 24 hours
+                   to serve you and improve your experience
+                </p>
+               <!-- <a href="#" class="medi-info-btn">READ MORE</a>-->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="medi-info">
+                <h3>Answering Inquiries</h3>
+                <p>
+                  If you have any questions about a clinic, doctor,
+                   or working hours, we are available
+                </p>
+                <!--<a href="#" class="medi-info-btn">READ MORE</a>-->
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mt-boxy-3">
+              <div class="mt-boxy-color"></div>
+              <div class="time-info">
+                <h3>Receive Suggestions</h3>
+                <!--<table style="margin: 8px 0px 0px" border="1">
+                  <tbody>
+                    <tr>
+                      <td>Monday - Friday</td>
+                      <td>8.00 - 17.00</td>
+                    </tr>
+                    <tr>
+                      <td>Saturday</td>
+                      <td>9.30 - 17.30</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>9.30 - 15.00</td>
+                    </tr>
+                  </tbody>
+                </table>-->
+                <p>
+                  Share your suggestions to help us improve the quality of our services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--cta-->
+    <!--about-->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="section-title">
+              <h2 class="head-title lg-line">
+                About Us <br />
+              </h2>
+              <hr class="botm-line" />
+              <p class="sec-para">
+                welcome to WeCare, since 2023 . we care about serving patients and providing them with the highest level of service.
+                We are available 24 hours a day to improve the patient experience
+              </p>
+              <!--<a href="" style="color: #0cb8b6; padding-top: 10px"
+                >Know more..</a
+              >-->
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-12">
+            <div style="visibility: visible" class="col-sm-9 more-features-box">
+              <div class="more-features-box-text">
+                <div class="more-features-box-text-icon">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="more-features-box-text-description">
+                  <h3>It's something important you want to know.</h3>
+                  <p>
+                    One of the most important features of WeCare is its rapid response,<br> to patient complaints,
+                    while ensuring that they reach the concerned party,
+                     and ensuring that solutions are provided to all problems facing patients.
+                  </p>
+                </div>
+              </div>
+              <div class="more-features-box-text">
+                <div class="more-features-box-text-icon">
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </div>
+                <div class="more-features-box-text-description">
+                  <h3>It's something important you want to know.</h3>
+                  <p>
+                    We seek to guide patients and save their time by helping them choose 
+                    the appropriate clinic and answering all their inquiries
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ about-->
+    <!--doctor team-->
+    <!-- <section id="doctor-team" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="ser-title">Meet Our Doctors!</h2>
+            <hr class="botm-line" />
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="thumbnail">
+              <img src="img/doctor1.jpg" alt="..." class="team-img" />
+              <div class="caption">
+                <h3>Jessica Wally</h3>
+                <p>Doctor</p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="thumbnail">
+              <img src="img/doctor2.jpg" alt="..." class="team-img" />
+              <div class="caption">
+                <h3>Iai Donas</h3>
+                <p>Doctor</p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="thumbnail">
+              <img src="img/doctor3.jpg" alt="..." class="team-img" />
+              <div class="caption">
+                <h3>Amanda Denyl</h3>
+                <p>Doctor</p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="thumbnail">
+              <img src="img/doctor4.jpg" alt="..." class="team-img" />
+              <div class="caption">
+                <h3>Jason Davis</h3>
+                <p>Doctor</p>
+                <ul class="list-inline">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--/ doctor team-->
+    <!--testimonial-->
+    
+    <!--/ testimonial-->
+    <!--cta 2-->
+    <section id="cta-2" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="text-right-md col-md-4 col-sm-4">
+            <h2 class="section-title white lg-line">
+              « A few words<br />
+              about us »
+            </h2>
+          </div>
+          <div class="col-md-4 col-sm-5">
+            The goal of WE CARE is to be a leading site in the field of health care and to have 
+            a globally recognized system that includes the best services to be 
+            provided to patients and their families.
+            <!--<p class="text-right text-primary"><i>— Medilap Healthcare</i></p>-->
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </section>
+    <!--cta-->
+    <!--contact-->
+    <!-- <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="ser-title">Contact us</h2>
+            <hr class="botm-line" />
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <h3>Contact Info</h3>
+            <div class="space"></div>
+            <p>
+              <i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome
+              Street<br />
+              New York, NY 17022
+            </p>
+            <div class="space"></div>
+            <p>
+              <i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i
+              >info@companyname.com
+            </p>
+            <div class="space"></div>
+            <p>
+              <i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234
+            </p>
+          </div>
+          <div class="col-md-8 col-sm-8 marb20">
+            <div class="contact-info">
+              <h3 class="cnt-ttl">Having Any Query! Or Book an appointment</h3>
+              <div class="space"></div>
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control br-radius-zero"
+                    id="name"
+                    placeholder="Your Name"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars"
+                  />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control br-radius-zero"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                    data-rule="email"
+                    data-msg="Please enter a valid email"
+                  />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control br-radius-zero"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 8 chars of subject"
+                  />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control br-radius-zero"
+                    name="message"
+                    rows="5"
+                    data-rule="required"
+                    data-msg="Please write something for us"
+                    placeholder="Message"
+                  ></textarea>
+                  <div class="validation"></div>
+                </div>
+
+                <div class="form-action">
+                  <button type="submit" class="btn btn-form">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!--/ contact-->
+    <!--footer-->
+    <footer id="footer">
+      <div class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 marb20">
+              <div class="ftr-tle">
+                <h4 class="white no-padding">Our motto</h4>
+              </div>
+              <div class="info-sec">
+                <p>
+                  Because you are the most important, WE CARE !
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 marb20">
+              <div class="ftr-tle">
+                <h4 class="white no-padding">Quick Links</h4>
+              </div>
+              <div class="info-sec">
+                <ul class="quick-info">
+                  <li>
+                    <a href="#banner"><i class="fa fa-circle"></i>Home</a>
+                  </li>
+                  <li>
+                    <a href="#service"><i class="fa fa-circle"></i>Service</a>
+                  </li>
+                  <li>
+                    <a href="#about"
+                      ><i class="fa fa-circle"></i>About us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-md-4 col-sm-4 marb20">
+              <div class="ftr-tle">
+                <h4 class="white no-padding">Follow us</h4>
+              </div>
+              <div class="info-sec">
+                <ul class="social-icon">
+                  <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                  <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                  <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                  <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              © Copyright WeCare. All Rights Reserved
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/ footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script  src='{{ url_for('static', filename='js/jquery.min.js') }}'></script>
+    <script  src='{{ url_for('static', filename='js/jquery.min.js') }}'></script>
+    <script  src='{{ url_for('static', filename='js/bootstrap.min.js') }}'></script>
+    <script  src='{{ url_for('static', filename='js/custom.js') }}'></script>
+    <script  src='{{ url_for('static', filename='contactform/contactform.js') }}'></script>
+  </body>
+</html>
